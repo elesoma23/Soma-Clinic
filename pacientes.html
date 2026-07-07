@@ -92,28 +92,9 @@ h2{
 
 <script>
 
-function guardarPaciente(){
+function onclick="guardarPaciente(){
 
-let paciente = {
-nombre: document.querySelector('input[placeholder="Nombres"]').value,
-apellidos: document.querySelector('input[placeholder="Apellidos"]').value,
-fecha: document.querySelector('input[type="date"]').value,
-sexo: document.querySelector('select').value,
-telefono: document.querySelector('input[placeholder="Teléfono"]').value,
-direccion: document.querySelector('textarea').value,
-ocupacion: document.querySelector('input[placeholder="Ocupación"]').value
-};
-
-
-let pacientes = JSON.parse(localStorage.getItem("pacientes")) || [];
-
-pacientes.push(paciente);
-
-localStorage.setItem("pacientes", JSON.stringify(pacientes));
-
-
-alert("Paciente guardado correctamente");
-
+alert("Soma Clinic funciona");
 
 }
 
